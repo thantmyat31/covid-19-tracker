@@ -3,7 +3,7 @@ import React from 'react';
 import CardComp from './../CardComp/CardComp';
 
 import { Grid } from '@material-ui/core';
-import styles from './Card.module.css';
+import styles from './Cards.module.css';
 import cx from 'classnames';
 
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
