@@ -4,6 +4,7 @@ import { fetchData } from './api';
 
 import { Cards, Chart, CountryPicker } from './components';
 import styles from './App.module.css';
+import covidLogo from './assets/image/covid-19.png';
 
 class App extends React.Component {
     state = {
@@ -25,6 +26,7 @@ class App extends React.Component {
         const { data, country } = this.state;
         return ( 
             <div className={styles.container}>
+                <img className={styles.image} src={covidLogo} alt="COVID-19" />
                 <Cards data={data} />
                 <CountryPicker handleOnCountryChange={this.handleOnCountryChange} />
                 <Chart data={data} country={country} />
